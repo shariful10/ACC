@@ -14,7 +14,7 @@ const Navbar = () => {
 	const [isMenuToggle, setIsMenuToggle] = useState(false);
 
 	return (
-		<nav className="xl:w-5/6 mx-auto px-5 xl:px-0">
+		<nav className="container">
 			<div className="flex justify-between items-center py-[38px]">
 				<Link href="/">
 					<Image src={logo} alt="Logo" />

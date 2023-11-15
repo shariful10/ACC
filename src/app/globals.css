@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* <==<<=== Custom CSS ===>>==> */
+
+.container {
+   @apply w-full xl:w-5/6 mx-auto px-5 xl:px-0;
+}
