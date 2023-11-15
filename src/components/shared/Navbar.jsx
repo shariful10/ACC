@@ -5,6 +5,8 @@ import logo from "@/images/logo.svg";
 import logo2 from "@/images/logo2.png";
 import React, { useState } from "react";
 import search from "@/images/search.svg";
+import logo3 from "@/images/footerlogo.png";
+import { IoMdSearch } from "react-icons/io";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 const Navbar = () => {
@@ -53,51 +55,60 @@ const Navbar = () => {
 					</div>
 				</div>
 				<button
-					className="rounded-full bg-secondary-500 p-2 lg:hidden"
-					onClick={() => setIsMenuToggle(!isMenuToggle)}
+					className="rounded-full bg-[#2F7CE3] p-2 block lg:hidden"
+					onClick={() => setIsMenuToggle(true)}
 				>
 					<Bars3Icon className="h-6 w-6 text-white" />
 				</button>
 			</div>
-			{isMenuToggle && (
-				<div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 shadow-2xl">
-					{/* <==<<=== Close Icon ===>>==> */}
-					<div className="flex justify-end px-12 pb-12 pt-7">
-						<button onClick={() => setIsMenuToggle(!isMenuToggle)}>
-							<XMarkIcon className="h-8 w-8 text-gray-400" />
-						</button>
-					</div>
-					{/* <==<<=== Menu Items ===>>==> */}
-					<div className="ml-[33%] flex flex-col gap-10 text-2xl">
-						<Link
-							onClick={() => setActive("home")}
-							href={"/"}
-							className={`${active === "home" && "text-[#2F7CE3]"}`}
-						>
-							Home
-						</Link>
-						<Link
-							onClick={() => setActive("about")}
-							href={"/"}
-							className={`${active === "about" && "text-[#2F7CE3]"}`}
-						>
-							About Us
-						</Link>
-						<Link
-							onClick={() => setActive("service")}
-							href={"/"}
-							className={`${active === "service" && "text-[#2F7CE3]"}`}
-						>
-							Request Service
-						</Link>
-						<p>Find A Store</p>
-						<Image src={search} alt="search" />
-						<button className="bg-[#2F7CE3] duration-300 hover:bg-blue-700 text-white py-2 px-[26px] rounded-full xl:text-xl">
-							Log In
-						</button>
-					</div>
+			<div
+				className={`${
+					isMenuToggle
+						? "right-0 transition-all duration-500"
+						: "-right-[500px] transition-all duration-500"
+				} fixed w-full bottom-0 z-40 h-full bg-[#2F7CE3] shadow-2xl lg:hidden`}
+			>
+				{/* <==<<=== Close Icon ===>>==> */}
+				<div className="flex justify-between px-12 pb-12 pt-7">
+					<Link href="/">
+						<Image src={logo3} alt="Logo" />
+					</Link>
+					<button onClick={() => setIsMenuToggle(false)}>
+						<XMarkIcon className="h-8 w-8 text-white" />
+					</button>
 				</div>
-			)}
+				{/* <==<<=== Menu Items ===>>==> */}
+				<div className="mx-[15%] flex flex-col gap-10 text-2xl text-white">
+					<Link
+						onClick={() => setActive("home")}
+						href={"/"}
+						className={`${active === "home" && "text-[#2F7CE3]"}`}
+					>
+						Home
+					</Link>
+					<Link
+						onClick={() => setActive("about")}
+						href={"/"}
+						className={`${active === "about" && "text-[#2F7CE3]"}`}
+					>
+						About Us
+					</Link>
+					<Link
+						onClick={() => setActive("service")}
+						href={"/"}
+						className={`${active === "service" && "text-[#2F7CE3]"}`}
+					>
+						Request Service
+					</Link>
+					<div className="flex items-center">
+						<p>Find A Store</p>
+						<IoMdSearch className="ml-3" />
+					</div>
+					<button className="bg-black duration-300 hover:bg-blue-700 text-white py-2 px-[26px] rounded-full xl:text-xl">
+						Log In
+					</button>
+				</div>
+			</div>
 		</nav>
 	);
 };
