@@ -73,30 +73,32 @@ const Navbar = () => {
 					<Link href="/">
 						<Image src={logo3} alt="Logo" />
 					</Link>
-					<button onClick={() => setIsMenuToggle(false)}>
-						<XMarkIcon className="h-8 w-8 text-white" />
+					<button
+						onClick={() => setIsMenuToggle(false)}
+					>
+						<XMarkIcon className="h-8 w-8 text-black" />
 					</button>
 				</div>
 				{/* <==<<=== Menu Items ===>>==> */}
-				<div className="mx-[15%] flex flex-col gap-10 text-2xl text-white">
+				<div className="mx-[15%] flex flex-col gap-10 text-2xl text-black">
 					<Link
 						onClick={() => setActive("home")}
 						href={"/"}
-						className={`${active === "home" && "text-[#2F7CE3]"}`}
+						className={`${active === "home" && "text-white"}`}
 					>
 						Home
 					</Link>
 					<Link
 						onClick={() => setActive("about")}
 						href={"/"}
-						className={`${active === "about" && "text-[#2F7CE3]"}`}
+						className={`${active === "about" && "text-white"}`}
 					>
 						About Us
 					</Link>
 					<Link
 						onClick={() => setActive("service")}
 						href={"/"}
-						className={`${active === "service" && "text-[#2F7CE3]"}`}
+						className={`${active === "service" && "text-white"}`}
 					>
 						Request Service
 					</Link>
