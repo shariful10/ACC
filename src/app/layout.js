@@ -15,7 +15,9 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body className={nunitoSans.className}>
 				<Navbar />
-				{children}
+				<div className="min-h-[calc(100vh-693.547px)]">
+            {children}
+            </div>
 				<Footer />
 			</body>
 		</html>
