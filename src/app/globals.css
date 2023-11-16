@@ -5,5 +5,5 @@
 /* <==<<=== Custom CSS ===>>==> */
 
 .container {
-   @apply w-full xl:w-5/6 mx-auto xl:px-0;
+   @apply w-full xl:w-5/6 mx-auto px-5 xl:px-0;
 }

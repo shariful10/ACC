@@ -29,14 +29,14 @@ const Navbar = () => {
 					</Link>
 					<Link
 						onClick={() => setActive("about")}
-						href={"/"}
+						href={"/about"}
 						className={`${active === "about" && "text-[#2F7CE3]"}`}
 					>
 						About Us
 					</Link>
 					<Link
 						onClick={() => setActive("service")}
-						href={"/"}
+						href={"/service"}
 						className={`${active === "service" && "text-[#2F7CE3]"}`}
 					>
 						Request Service
@@ -65,7 +65,7 @@ const Navbar = () => {
 				className={`${
 					isMenuToggle
 						? "right-0 transition-all duration-500"
-						: "-right-[500px] transition-all duration-500"
+						: "-right-[1050px] transition-all duration-500"
 				} fixed w-full bottom-0 z-40 h-full bg-[#2F7CE3] shadow-2xl lg:hidden`}
 			>
 				{/* <==<<=== Close Icon ===>>==> */}
@@ -80,7 +80,7 @@ const Navbar = () => {
 					</button>
 				</div>
 				{/* <==<<=== Menu Items ===>>==> */}
-				<div className="mx-[15%] flex flex-col gap-10 text-2xl text-black">
+				<div className="px-12 flex flex-col gap-10 text-2xl text-black">
 					<Link
 						onClick={() => setActive("home")}
 						href={"/"}
