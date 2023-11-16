@@ -19,10 +19,10 @@ const ProductDetail = () => {
 	return (
 		<div className="myContainer mt-[50px] md:mt-[80px]">
 			<div className="grid md:grid-cols-2 gap-[50px]">
-				<div className="bg-[#F3F3F6] px-[134px] py-[81px] rounded-[40px]">
+				<div className="bg-[#F3F3F6] md:px-[134px] md:py-[81px] rounded-[40px]">
 					<Image
 						src={overviewData.Image_Url}
-						className="w-[433px] mx-auto"
+						className="w-[1000px] md:w-[433px] mx-auto"
 						alt="image"
 					/>
 				</div>
@@ -70,16 +70,16 @@ const ProductDetail = () => {
 						</h2>
 						<p className="primary p">(No discount available)</p>
 					</div>
-					<div className="flex items-center gap-[30px]">
-						<div className="py-6 px-[58px] border border-[#557597] rounded-[15px] flex flex-col items-center ">
+					<div className="flex flex-col md:flex-row items-center gap-[30px]">
+						<div className="py-6 md:px-[58px] w-full border border-[#557597] rounded-[15px] flex flex-col items-center ">
 							<Image src={blue} width={30} height={30} alt="blue" />
 							<p className="p mt-4 font-semibold">Blue</p>
 						</div>
-						<div className="py-6 px-[58px] border border-[#557597] rounded-[15px] flex flex-col items-center ">
+						<div className="py-6 md:px-[58px] w-full border border-[#557597] rounded-[15px] flex flex-col items-center ">
 							<Image src={pink} width={30} height={30} alt="blue" />
 							<p className="p mt-4 font-semibold">Pink</p>
 						</div>
-						<div className="py-6 px-[58px] border border-[#557597] rounded-[15px] flex flex-col items-center ">
+						<div className="py-6 md:px-[58px] w-full border border-[#557597] rounded-[15px] flex flex-col items-center ">
 							<Image src={yellow} width={30} height={30} alt="blue" />
 							<p className="p mt-4 font-semibold">Yellow</p>
 						</div>
