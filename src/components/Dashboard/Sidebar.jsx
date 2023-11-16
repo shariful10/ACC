@@ -3,6 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import logo from "@/images/logo.svg";
+import image from "@/images/image.svg";
+import add from "@/images/add.svg";
 import { MdClose } from "react-icons/md";
 import { AiOutlineBars } from "react-icons/ai";
 import menu from "@/images/menu.svg";
@@ -45,7 +47,7 @@ const Sidebar = () => {
 			</div>
 			{/* Sidebar */}
 			<div
-				className={`z-10 md:fixed flex flex-col justify-between overflow-x-hidden bg-gray-100 md:bg-[#6b7cff1d] w-64 space-y-6 py-4 absolute inset-y-0 left-0 transform ${
+				className={`z-10 md:fixed flex flex-col justify-between overflow-x-hidden bg-gray-100 md:bg-[#6b7cff1d] w-[275px] space-y-6 py-4 absolute inset-y-0 left-0 transform ${
 					isActive && "-translate-x-full"
 				}  md:translate-x-0 transition duration-500 ease-in-out shadow`}
 			>
@@ -63,23 +65,38 @@ const Sidebar = () => {
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-col justify-between flex-1 mt-6 mx-[30px]">
-					<nav>
-						<ul>
-							<li>
-								<Link
-									onClick={() => setActive("admin")}
-									href={"/admin"}
-									className={`${
-										active === "admin" && "bg-[#CCDBF2]"
-									} flex items-center py-4 px-[10px] rounded-[10px]`}
-								>
-									<Image src={menu} alt="menu" />
-									<span className="mx-4 font-medium">Dashboard</span>
-								</Link>
-							</li>
-						</ul>
-					</nav>
+				<div className="flex flex-col flex-1 mt-6 mx-[30px]">
+					<Link
+						onClick={() => setActive("admin")}
+						href={"/admin"}
+						className={`${
+							active === "admin" && "bg-[#CCDBF2]"
+						} flex items-center py-4 px-[10px] rounded-[10px]`}
+					>
+						<Image src={menu} alt="menu" />
+						<span className="mx-4 font-medium">Dashboard</span>
+					</Link>
+					<p className="p mt-12">PAGES</p>
+					<Link
+						onClick={() => setActive("hero")}
+						href={"/admin/add-hero-image"}
+						className={`${
+							active === "hero" && "bg-[#CCDBF2]"
+						} flex items-center py-4 px-[10px] rounded-[10px] mt-4`}
+					>
+						<Image src={image} alt="menu" />
+						<span className="mx-4 font-medium">Add Hero Image</span>
+					</Link>
+					<Link
+						onClick={() => setActive("product")}
+						href={"/admin/add-product"}
+						className={`${
+							active === "product" && "bg-[#CCDBF2]"
+						} flex items-center py-4 px-[10px] rounded-[10px]`}
+					>
+						<Image src={add} alt="menu" />
+						<span className="mx-4 font-medium">Add Product</span>
+					</Link>
 				</div>
 			</div>
 		</>
