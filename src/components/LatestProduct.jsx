@@ -12,7 +12,7 @@ const LatestProduct = () => {
 	return (
 		<div className="myContainer">
 			<h2 className="h2 text-center">Shop our Latest Product</h2>
-			<div className="flex justify-start md:justify-center items-end md:items-center gap-5 md:gap-[71px] text-lg xl:text-xl cursor-pointer font-semibold mt-[60px] overflow-scroll md:overflow-hidden">
+			<div className="flex justify-start md:justify-center items-end md:items-center gap-5 md:gap-[71px] text-lg xl:text-xl cursor-pointer font-semibold mt-[60px] overflow-scroll md:overflow-hidden mb-[30px]">
 				<p
 					onClick={() => setTab("overview")}
 					className={`${
@@ -64,7 +64,7 @@ const LatestProduct = () => {
 					Washing <span className="ml-2">Machine</span>
 				</p>
 			</div>
-			<div className="mt-[30px]">
+			<div className="">
 				{tab === "overview" && <Overview />}
 				{tab === "ac" && <AirConditioner />}
 				{tab === "refrigerator" && <Refrigerator />}

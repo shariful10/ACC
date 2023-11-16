@@ -6,11 +6,7 @@ module.exports = {
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
-		extend: {
-			fontSize: {
-				h2: "56px",
-			},
-		},
+		extend: {},
 	},
 	plugins: [],
 };

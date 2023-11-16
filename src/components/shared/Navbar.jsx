@@ -29,7 +29,7 @@ const Navbar = () => {
 					</Link>
 					<Link
 						onClick={() => setActive("about")}
-						href={"/about"}
+						href={"#about"}
 						className={`${active === "about" && "text-[#2F7CE3]"}`}
 					>
 						About Us
