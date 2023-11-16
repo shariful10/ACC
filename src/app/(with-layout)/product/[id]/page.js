@@ -33,7 +33,7 @@ const ProductDetail = () => {
 						/>
 					</div>
 					<div>
-						<h2 className="h2">Television</h2>
+						<h2 className="h2">{overviewData.name}</h2>
 						<p className="p">
 							It is a long established fact that a reader will be
 							distracted by the readable content of a page when looking

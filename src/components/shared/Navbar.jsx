@@ -17,7 +17,7 @@ const Navbar = () => {
 		<nav className="myContainer">
 			<div className="flex justify-between items-center pt-[38px]">
 				<Link href="/">
-					<Image src={logo} alt="Logo" />
+					<Image src={logo} className="w-[80%]" alt="Logo" />
 				</Link>
 				<div className="hidden lg:flex justify-between items-center gap-[30px] border border-[#E4E4E4] px-[13.39px] py-2 rounded-full cursor-pointer text-lg xl:text-xl font-semibold">
 					<Link
@@ -47,7 +47,7 @@ const Navbar = () => {
 						Log In
 					</button>
 				</div>
-				<div className="hidden xl:flex gap-[10px] items-center">
+				<div className="hidden lg:flex gap-[10px] items-center">
 					<Image src={logo2} alt="house" />
 					<div className="text-xl font-semibold">
 						<p>ACC InstaHome</p>
@@ -55,7 +55,7 @@ const Navbar = () => {
 					</div>
 				</div>
 				<button
-					className="rounded-full bg-[#2F7CE3] p-2 block lg:hidden"
+					className="rounded-full bg-[#2F7CE3] p-2 block md:hidden"
 					onClick={() => setIsMenuToggle(true)}
 				>
 					<Bars3Icon className="h-6 w-6 text-white" />

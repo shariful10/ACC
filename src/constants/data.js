@@ -49,21 +49,7 @@ export const overview = [
 
 export const air = [
 	{
-		id: 1,
-		name: "Air Conditioner",
-      desc: "Amage view 55” smart television",
-      link: "View Details",
-      Image_Url: img4
-	},
-	{
-		id: 2,
-		name: "Air Conditioner",
-      desc: "Amage view 55” smart television",
-      link: "View Details",
-      Image_Url: img4
-	},
-	{
-		id: 3,
+		id: 4,
 		name: "Air Conditioner",
       desc: "Amage view 55” smart television",
       link: "View Details",
@@ -77,7 +63,21 @@ export const air = [
       Image_Url: img4
 	},
 	{
-		id: 5,
+		id: 4,
+		name: "Air Conditioner",
+      desc: "Amage view 55” smart television",
+      link: "View Details",
+      Image_Url: img4
+	},
+	{
+		id: 4,
+		name: "Air Conditioner",
+      desc: "Amage view 55” smart television",
+      link: "View Details",
+      Image_Url: img4
+	},
+	{
+		id: 4,
 		name: "Air Conditioner",
       desc: "Amage view 55” smart television",
       link: "View Details",
@@ -87,14 +87,7 @@ export const air = [
 
 export const refrigarator = [
 	{
-		id: 1,
-		name: "Refrigerator",
-      desc: "Amage view 55” smart television",
-      link: "View Details",
-      Image_Url: img3
-	},
-	{
-		id: 2,
+		id: 3,
 		name: "Refrigerator",
       desc: "Amage view 55” smart television",
       link: "View Details",
@@ -108,14 +101,21 @@ export const refrigarator = [
       Image_Url: img3
 	},
 	{
-		id: 4,
+		id: 3,
 		name: "Refrigerator",
       desc: "Amage view 55” smart television",
       link: "View Details",
       Image_Url: img3
 	},
 	{
-		id: 5,
+		id: 3,
+		name: "Refrigerator",
+      desc: "Amage view 55” smart television",
+      link: "View Details",
+      Image_Url: img3
+	},
+	{
+		id: 3,
 		name: "Refrigerator",
       desc: "Amage view 55” smart television",
       link: "View Details",
@@ -124,28 +124,7 @@ export const refrigarator = [
 ];
 export const telivision = [
 	{
-		id: 1,
-		name: "Television",
-      desc: "Amage view 55” smart television",
-      link: "View Details",
-      Image_Url: img5
-	},
-	{
-		id: 2,
-		name: "Television",
-      desc: "Amage view 55” smart television",
-      link: "View Details",
-      Image_Url: img5
-	},
-	{
-		id: 3,
-		name: "Television",
-      desc: "Amage view 55” smart television",
-      link: "View Details",
-      Image_Url: img5
-	},
-	{
-		id: 4,
+		id: 5,
 		name: "Television",
       desc: "Amage view 55” smart television",
       link: "View Details",
@@ -157,11 +136,32 @@ export const telivision = [
       desc: "Amage view 55” smart television",
       link: "View Details",
       Image_Url: img5
+	},
+	{
+		id: 1,
+		name: "Television",
+      desc: "Amage view 55” smart television",
+      link: "View Details",
+      Image_Url: img1
+	},
+	{
+		id: 1,
+		name: "Television",
+      desc: "Amage view 55” smart television",
+      link: "View Details",
+      Image_Url: img1
+	},
+	{
+		id: 1,
+		name: "Television",
+      desc: "Amage view 55” smart television",
+      link: "View Details",
+      Image_Url: img1
 	},
 ];
 export const machine = [
 	{
-		id: 1,
+		id: 2,
 		name: "Washing Machine",
       desc: "Your future machine is here",
       link: "View Details",
@@ -175,21 +175,21 @@ export const machine = [
       Image_Url: img2
 	},
 	{
-		id: 3,
+		id: 2,
 		name: "Washing Machine",
       desc: "Your future machine is here",
       link: "View Details",
       Image_Url: img2
 	},
 	{
-		id: 4,
+		id: 2,
 		name: "Washing Machine",
       desc: "Your future machine is here",
       link: "View Details",
       Image_Url: img2
 	},
 	{
-		id: 5,
+		id: 2,
 		name: "Washing Machine",
       desc: "Your future machine is here",
       link: "View Details",

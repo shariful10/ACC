@@ -5,7 +5,7 @@
 /* <==<<=== Custom CSS ===>>==> */
 
 .myContainer {
-	@apply container mx-auto px-5 xl:px-0;
+	@apply container mx-auto px-5;
 }
 
 .h2 {
@@ -13,11 +13,11 @@
 }
 
 .h3 {
-	@apply text-[42px] font-bold;
+	@apply text-[42px] sm:text-[24px] font-bold;
 }
 
 .h4 {
-	@apply text-[28px] font-bold;
+	@apply text-[24px] font-bold;
 }
 
 .p {
