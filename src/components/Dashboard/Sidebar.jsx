@@ -19,7 +19,7 @@ const Sidebar = () => {
 	return (
 		<>
 			{/* Small Screen Navbar */}
-			<div className="bg-[#6b7cff29] text-gray-800 flex justify-between md:hidden">
+			<div className="bg-gray-100 text-gray-800 flex justify-between md:hidden">
 				<div>
 					<div className="block cursor-pointer p-4 font-bold">
 						<Image
@@ -47,15 +47,15 @@ const Sidebar = () => {
 			<div
 				className={`z-10 md:fixed flex flex-col justify-between overflow-x-hidden bg-gray-100 md:bg-[#6b7cff1d] w-64 space-y-6 py-4 absolute inset-y-0 left-0 transform ${
 					isActive && "-translate-x-full"
-				}  md:translate-x-0 transition duration-500 ease-in-out`}
+				}  md:translate-x-0 transition duration-500 ease-in-out shadow`}
 			>
 				<div>
 					{/* Branding & Profile Info */}
 					<div>
-						<div className="w-full md:flex pt-2 pb-[11px] justify-center items-center mx-auto border-b border-b-[#050C2F]">
+						<div className="w-full md:flex pt-2 pb-[11px] justify-center items-center mx-auto md:border-b border-b-[#050C2F]">
 							<Link href={"/"}>
 								<Image
-									className="w-[160px] -ml-10"
+									className="w-[100px] md:w-[160px] ml-[30px] md:-ml-10"
 									src={logo}
 									alt="Logo"
 								/>
