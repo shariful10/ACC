@@ -7,7 +7,7 @@ import { Pagination } from "swiper/modules";
 
 const Banner = () => {
 	return (
-		<div className="container mt-[47px] mb-[100px]">
+		<div className="myContainer mt-[47px] mb-[100px]">
 			<Swiper
 				spaceBetween={30}
 				pagination={{

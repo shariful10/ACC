@@ -4,32 +4,44 @@
 
 /* <==<<=== Custom CSS ===>>==> */
 
-.container {
-   @apply w-full xl:w-5/6 mx-auto px-5 xl:px-0;
+.myContainer {
+	@apply container mx-auto px-5 xl:px-0;
+}
+
+.h2 {
+	@apply text-[32px] md:text-[56px] font-bold;
+}
+
+.h3 {
+	@apply text-[42px] font-bold;
+}
+
+.h4 {
+	@apply text-[28px] font-bold;
 }
 
 .sliderBg {
-   background-image: url('../images/slider1.png');
+	background-image: url("../images/slider1.png");
 }
 
 .sliderBg2 {
-   background-image: url('../images/slider2.webp');
+	background-image: url("../images/slider2.webp");
 }
 
 .sliderBg3 {
-   background-image: url('../images/slider3.jpg');
+	background-image: url("../images/slider3.jpg");
 }
 
 .sliderBg4 {
-   background-image: url('../images/slider4.jpg');
+	background-image: url("../images/slider4.jpg");
 }
 
 .sliderDesign {
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .swiper-pagination-bullet {
-   background-color: white !important;
+	background-color: white !important;
 }
