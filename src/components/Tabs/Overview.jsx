@@ -1,5 +1,6 @@
-import { overview } from "@/constants/data";
+import Link from "next/link";
 import Image from "next/image";
+import { overview } from "@/constants/data";
 import { FaAngleRight } from "react-icons/fa6";
 
 const Overview = () => {
@@ -13,10 +14,12 @@ const Overview = () => {
 					>
 						<h3 className="h3">{name}</h3>
 						<p className="text-lg xl:text-xl py-2">{desc}</p>
-						<button className="text-[#2F7CE3] flex justify-center items-center mx-auto group">
-							<span>{link}</span>{" "}
-							<FaAngleRight className="group-hover:ml-2 duration-100" />
-						</button>
+						<Link href={`/product/${id}`}>
+							<button className="text-[#2F7CE3] flex justify-center items-center mx-auto group">
+								<span>{link}</span>{" "}
+								<FaAngleRight className="group-hover:ml-2 duration-100" />
+							</button>
+						</Link>
 						<Image
 							src={Image_Url}
 							className="w-[298px] min-h-[257px] mx-auto"
@@ -33,10 +36,12 @@ const Overview = () => {
 					>
 						<h4 className="h4">{name}</h4>
 						<p className="text-lg xl:text-xl py-2">{desc}</p>
-						<button className="text-[#2F7CE3] flex justify-center items-center mx-auto group">
-							<span>{link}</span>{" "}
-							<FaAngleRight className="group-hover:ml-2 duration-100" />
-						</button>
+						<Link href={`/product/${id}`}>
+							<button className="text-[#2F7CE3] flex justify-center items-center mx-auto group">
+								<span>{link}</span>{" "}
+								<FaAngleRight className="group-hover:ml-2 duration-100" />
+							</button>
+						</Link>
 						<Image
 							src={Image_Url}
 							className="w-[298px] min-h-[257px] max-h-[181px] mx-auto"

@@ -11,34 +11,39 @@ export const overview = [
       desc: "Amage view 55” smart television",
       link: "View Details",
       Image_Url: img1,
+      price: 520
 	},
 	{
 		id: 2,
 		name: "Washing Machine",
       desc: "Your future machine is here",
       link: "View Details",
-      Image_Url: img2
+      Image_Url: img2,
+      price: 450
 	},
 	{
 		id: 3,
 		name: "Refrigerator",
       desc: "Amage view 55” smart television",
       link: "View Details",
-      Image_Url: img3
+      Image_Url: img3,
+      price: 320
 	},
 	{
 		id: 4,
 		name: "Air Conditioner",
       desc: "Amage view 55” smart television",
       link: "View Details",
-      Image_Url: img4
+      Image_Url: img4,
+      price: 620
 	},
 	{
 		id: 5,
 		name: "Television",
       desc: "Amage view 55” smart television",
       link: "View Details",
-      Image_Url: img5
+      Image_Url: img5,
+      price: 620
 	},
 ];
 

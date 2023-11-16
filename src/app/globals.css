@@ -20,6 +20,14 @@
 	@apply text-[28px] font-bold;
 }
 
+.p {
+   @apply text-lg xl:text-xl
+}
+
+.primary {
+   @apply text-[#2F7CE3]
+}
+
 .sliderBg {
 	background-image: url("../images/slider1.png");
 }
