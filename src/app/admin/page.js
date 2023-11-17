@@ -29,7 +29,7 @@ const Dashboard = () => {
 									</th>
 									<th
 										scope="col"
-										className="px-5 py-3 border-b border-[#050C2F]  text-left text-sm uppercase font-medium"
+										className="px-2 md:px-5 py-3 border-b border-[#050C2F]  text-left text-sm uppercase font-medium"
 									>
 										Head Text
 									</th>
@@ -56,7 +56,7 @@ const Dashboard = () => {
 											</div>
 										</div>
 									</td>
-									<td className="px-5 py-5 text-sm">
+									<td className="px-2 md:px-5 py-5 text-sm">
 										<p className="md:p md:font-bold mb-5 sm:mb-0">
 											WELCOME TO THE WORLD OF ACC
 										</p>
@@ -94,13 +94,13 @@ const Dashboard = () => {
 								<tr>
 									<th
 										scope="col"
-										className="px-5 py-3 border-b border-[#050C2F]  text-left text-sm uppercase font-medium"
+										className="px-2 md:px-5 py-3 border-b border-[#050c2f]  text-left text-sm uppercase font-medium"
 									>
 										Image
 									</th>
 									<th
 										scope="col"
-										className="px-5 py-3 border-b border-[#050C2F]  text-left text-sm uppercase font-medium"
+										className="md:px-5 py-3 border-b border-[#050C2F]  text-left text-sm uppercase font-medium"
 									>
 										Product Name
 									</th>

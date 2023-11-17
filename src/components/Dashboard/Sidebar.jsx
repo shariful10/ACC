@@ -78,10 +78,10 @@ const Sidebar = () => {
 					</Link>
 					<p className="p mt-12">PAGES</p>
 					<Link
-						onClick={() => setActive("hero")}
+						onClick={() => setActive("admin/add-hero-image")}
 						href={"/admin/add-hero-image"}
 						className={`${
-							active === "hero" && "bg-[#CCDBF2]"
+							active === "admin/add-hero-image" && "bg-[#CCDBF2]"
 						} flex items-center py-4 px-[10px] rounded-[10px] mt-4`}
 					>
 						<Image src={image} alt="menu" />
