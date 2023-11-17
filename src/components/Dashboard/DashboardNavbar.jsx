@@ -6,7 +6,7 @@ import { FaUserCircle } from "react-icons/fa";
 
 const DashboardNavbar = () => {
   return (
-    <div className='hidden px-[40px] md:flex items-center justify-between pt-[20px] pb-[18px] border-b border-b-[#050C2F]'>
+    <div className='hidden px-[60px] md:flex items-center justify-between pt-[20px] pb-[18px] border-b border-b-[#050C2F]'>
       <div className="flex items-center">
          <div className='flex items-center'>
             <Image src={left} alt="left" />
