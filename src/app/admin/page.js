@@ -23,7 +23,7 @@ const Dashboard = () => {
 								<tr>
 									<th
 										scope="col"
-										className="px-5 py-3 border-b border-[#050C2F]  text-left text-sm uppercase font-medium"
+										className="px-5 py-3 border-b border-[#050C2F] text-left text-sm uppercase font-medium"
 									>
 										Image
 									</th>
@@ -49,7 +49,7 @@ const Dashboard = () => {
 												<div className="block relative">
 													<Image
 														src={img}
-														className="mx-auto object-cover h-14 w-16 md:w-[211px] md:h-[91.758px] rounded-[10px]"
+														className="mx-auto xl:object-cover h-14 w-16 md:w-20 lg:w-[120px] xl:w-[211px] md:h-[91.758px] rounded-[10px]"
 														alt=""
 													/>
 												</div>
@@ -94,13 +94,13 @@ const Dashboard = () => {
 								<tr>
 									<th
 										scope="col"
-										className="px-2 md:px-5 py-3 border-b border-[#050c2f]  text-left text-sm uppercase font-medium"
+										className="px-5 py-3 border-b border-[#050c2f] text-left text-sm uppercase font-medium"
 									>
 										Image
 									</th>
 									<th
 										scope="col"
-										className="md:px-5 py-3 border-b border-[#050C2F]  text-left text-sm uppercase font-medium"
+										className="px-5 py-3 border-b border-[#050C2F] text-left text-sm uppercase font-medium"
 									>
 										Product Name
 									</th>

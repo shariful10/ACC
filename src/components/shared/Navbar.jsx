@@ -55,7 +55,7 @@ const Navbar = () => {
 					</div>
 				</div>
 				<button
-					className="rounded-full bg-[#2F7CE3] p-2 block md:hidden"
+					className="rounded-full bg-[#2F7CE3] p-2 block lg:hidden"
 					onClick={() => setIsMenuToggle(true)}
 				>
 					<Bars3Icon className="h-6 w-6 text-white" />
@@ -82,15 +82,21 @@ const Navbar = () => {
 				{/* <==<<=== Menu Items ===>>==> */}
 				<div className="px-12 flex flex-col gap-10 text-2xl text-black">
 					<Link
-						onClick={() => setActive("home")}
+						onClick={() => {
+                     setActive("home"),
+                     setIsMenuToggle(false)
+                  }}
 						href={"/"}
 						className={`${active === "home" && "text-white"}`}
 					>
 						Home
 					</Link>
 					<Link
-						onClick={() => setActive("about")}
-						href={"/"}
+						onClick={() => {
+                     setActive("about"),
+                     setIsMenuToggle(false)
+                  }}
+						href={"#about"}
 						className={`${active === "about" && "text-white"}`}
 					>
 						About Us

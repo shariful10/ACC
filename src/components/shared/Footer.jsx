@@ -12,8 +12,8 @@ import play from "@/images/play.png";
 const Footer = () => {
 	return (
 		<footer className="myContainer">
-			<div className="px-5 py-10 md:py-[100px] md:px-[120px] bg-[#F3F3F6] rounded-[40px] mb-[38px]">
-         <div className="grid md:grid-cols-4 gap-10">
+			<div className="px-5 py-10 md:py-[100px] md:px-[60px] lg:px-[120px] bg-[#F3F3F6] rounded-[40px] mb-[38px]">
+         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
 				<div className="flex flex-col gap-y-[30px]">
 					<Image src={logo} alt="" />
 					<p className="text-lg">

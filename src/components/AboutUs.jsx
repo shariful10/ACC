@@ -5,7 +5,7 @@ import Buttons from "./shared/Buttons";
 const AboutUs = () => {
 	return (
 		<div id="about" className="myContainer my-[50px] md:my-[130px] scroll-smooth">
-			<div className="bg-[#F3F3F6] px-5 py-10 md:p-[92px] rounded-[40px] grid md:grid-cols-2 items-center gap-x-[84px] gap-y-10">
+			<div className="bg-[#F3F3F6] px-5 py-10 md:px-[50px] lg:px-[92px] md:py-[92px] rounded-[40px] grid md:grid-cols-2 items-center gap-x-[84px] gap-y-10">
 				<Image src={image} alt="image" />
 				<div>
 					<h2 className="h2">About Us</h2>

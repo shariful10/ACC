@@ -47,17 +47,17 @@ const Sidebar = () => {
 			</div>
 			{/* Sidebar */}
 			<div
-				className={`z-50 md:fixed flex flex-col justify-between overflow-x-hidden bg-[#F3F3F6] w-[275px] space-y-6 py-4 absolute inset-y-0 left-0 transform ${
+				className={`z-50 lg:fixed flex flex-col justify-between overflow-x-hidden bg-[#F3F3F6] w-[275px] space-y-6 py-4 absolute inset-y-0 left-0 transform ${
 					isActive && "-translate-x-full"
 				}  md:translate-x-0 transition duration-500 ease-in-out shadow`}
 			>
 				<div>
 					{/* Branding & Profile Info */}
 					<div>
-						<div className="w-full md:flex pt-2 pb-[11px] justify-center items-center mx-auto md:border-b border-b-[#050C2F]">
+						<div className="w-full lg:flex pt-2 pb-[22px] lg:pb-[11px] justify-center items-center mx-auto md:border-b border-b-[#050C2F]">
 							<Link href={"/"}>
 								<Image
-									className="w-[100px] md:w-[160px] ml-[30px] md:-ml-10"
+									className="w-[100px] md:w-[160px] ml-[30px] lg:-ml-10"
 									src={logo}
 									alt="Logo"
 								/>

@@ -24,7 +24,7 @@ const ProductDetail = () => {
 	return (
 		<>
 			<div className="myContainer my-[50px] md:my-[80px]">
-				<div className="grid md:grid-cols-2 gap-[50px]">
+				<div className="lg:flex gap-[50px]">
 					<div className="bg-[#F3F3F6] 2xl:px-[134px] 2xl:py-[81px] rounded-[40px] flex items-center">
 						<Image
 							src={overviewData.Image_Url}
@@ -32,7 +32,7 @@ const ProductDetail = () => {
 							alt="image"
 						/>
 					</div>
-					<div>
+					<div className="mt-[50px]">
 						<h2 className="h2">{overviewData.name}</h2>
 						<p className="p">
 							It is a long established fact that a reader will be
@@ -81,7 +81,7 @@ const ProductDetail = () => {
 							</h2>
 							<p className="primary p">(No discount available)</p>
 						</div>
-						<div className="flex flex-col md:flex-row items-center gap-[30px]">
+						<div className="grid grid-cols-3 items-center gap-[30px]">
 							<div className="py-6 md:px-[58px] w-full border border-[#557597] rounded-[15px] flex flex-col items-center ">
 								<Image src={blue} width={30} height={30} alt="blue" />
 								<p className="p mt-4 font-semibold">Blue</p>
